@@ -1,5 +1,8 @@
 ﻿using DeduMVCProject.Security;
 using System.Web.Mvc;
+using System.Web.Security;
+using DeduMVCProject.Models.ViewModel;
+using DeduMVCProject.Models.EntityManager;
 
 namespace DeduMVCProject.Controllers
 {
@@ -27,6 +30,20 @@ namespace DeduMVCProject.Controllers
             return View();
 
 
+        }
+
+        [AuthorizeRoles("Admin")]
+        public ActionResult ManageUserPartial()
+        {
+            if (User.Identity.IsAuthenticated)
+            {
+                string loginName = User.Identity.Name;
+                UserManager UM = new UserManager();
+                UserDataView UDV = UM.GetUserDataView(loginName);
+                return PartialView(UDV);
+            }
+
+            return View();
         }
     }
 }
