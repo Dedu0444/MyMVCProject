@@ -1,4 +1,5 @@
-﻿using System.Web.Mvc;
+﻿using DeduMVCProject.Security;
+using System.Web.Mvc;
 
 namespace DeduMVCProject.Controllers
 {
@@ -13,6 +14,19 @@ namespace DeduMVCProject.Controllers
         public ActionResult Welcome()
         {
             return View();
+        }
+
+        [AuthorizeRoles("Admin")]
+        public ActionResult AdminOnly()
+        {
+            return View();
+        }
+
+        public ActionResult UnAuthorized()
+        {
+            return View();
+
+
         }
     }
 }
