@@ -29,9 +29,5 @@ namespace DeduMVCProject.Models.DB
         public virtual DbSet<SYSUser> SYSUsers { get; set; }
         public virtual DbSet<SYSUserProfile> SYSUserProfiles { get; set; }
         public virtual DbSet<SYSUserRole> SYSUserRoles { get; set; }
-
-        public System.Data.Entity.DbSet<DeduMVCProject.Models.ViewModel.UserSignUpView> UserSignUpViews { get; set; }
-
-        public System.Data.Entity.DbSet<DeduMVCProject.Models.ViewModel.UserLoginView> UserLoginViews { get; set; }
     }
 }

@@ -63,5 +63,13 @@ namespace DeduMVCProject.Controllers
             // If we got this far, something failed, redisplay form
             return View(ULV);
         }
+
+        [Authorize]
+        public ActionResult SignOut()
+        {
+            FormsAuthentication.SignOut();
+            return RedirectToAction("Index", "Home");
+        }
+
     }
 }
