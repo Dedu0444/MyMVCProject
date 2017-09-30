@@ -1,0 +1,42 @@
+﻿@model DeduMVCProject.Models.ViewModel.UserDataView
+
+<div id="divEdit" style="display:none">
+    <input type="hidden" id="hidID" />
+    <table>
+        <tr>
+            <td>Login Name</td>
+            <td><input type="text" id="txtLoginName" class="form-control" /></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="text" id="txtPassword" class="form-control" /></td>
+        </tr>
+        <tr>
+            <td>First Name</td>
+            <td><input type="text" id="txtFirstName" class="form-control" /></td>
+        </tr>
+        <tr>
+            <td>Last Name</td>
+            <td><input type="text" id="txtLastName" class="form-control" /></td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td>
+                @Html.DropDownListFor(o => o.UserGender.SelectedGender,
+                       new SelectList(Model.UserGender.Gender, "Value", "Text"),
+                       "",
+                       new { id = "ddlGender", @class = "form-control" })
+            </td>
+        </tr>
+        <tr>
+            <td>Role</td>
+            <td>
+                @Html.DropDownListFor(o => o.UserRoles.SelectedRoleID,
+                       new SelectList(Model.UserRoles.UserRoleList, "LOOKUPRoleID", "RoleName"),
+                       "",
+                       new { id = "ddlRoles", @class = "form-control" })
+            </td>
+        </tr>
+    </table>
+</div>  
+
