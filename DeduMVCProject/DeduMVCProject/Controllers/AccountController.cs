@@ -68,7 +68,7 @@ namespace DeduMVCProject.Controllers
         public ActionResult SignOut()
         {
             FormsAuthentication.SignOut();
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("LogIn", "Account");
         }
 
     }
