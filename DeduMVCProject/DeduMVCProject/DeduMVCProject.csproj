@@ -97,10 +97,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\bootstrap-theme.css" />
-    <Content Include="Content\bootstrap-theme.min.css" />
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap\css\bootstrap.css" />
+    <Content Include="Content\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Content\bootstrap\js\bootstrap.js" />
+    <Content Include="Content\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\css\sb-admin.css" />
+    <Content Include="Content\jquery\jquery.js" />
+    <Content Include="Content\jquery\jquery.min.js" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\themes\base\accordion.css" />
     <Content Include="Content\themes\base\all.css" />
@@ -143,7 +152,7 @@
     <Content Include="Content\themes\base\tabs.css" />
     <Content Include="Content\themes\base\theme.css" />
     <Content Include="Content\themes\base\tooltip.css" />
-    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="Global.asax" />
     <Content Include="Models\DB\DemoModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -162,29 +171,49 @@
     <Content Include="Models\DB\DemoModel.edmx.diagram">
       <DependentUpon>DemoModel.edmx</DependentUpon>
     </Content>
-    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Content\bootstrap.min.css.map" />
-    <Content Include="Content\bootstrap.css.map" />
-    <Content Include="Content\bootstrap-theme.min.css.map" />
-    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\scss\navbar\_navbar_colors.scss" />
+    <Content Include="Content\scss\navbar\_navbar_fixed.scss" />
+    <Content Include="Content\scss\navbar\_navbar_global.scss" />
+    <Content Include="Content\scss\navbar\_navbar_static.scss" />
+    <Content Include="Content\scss\navbar\_navbar_toggle.scss" />
+    <Content Include="Content\scss\sb-admin.scss" />
+    <Content Include="Content\scss\_cards.scss" />
+    <Content Include="Content\scss\_footer.scss" />
+    <Content Include="Content\scss\_global.scss" />
+    <Content Include="Content\scss\_login.scss" />
+    <Content Include="Content\scss\_mixins.scss" />
+    <Content Include="Content\scss\_utilities.scss" />
+    <Content Include="Content\scss\_variables.scss" />
     <None Include="Scripts\jquery-3.2.1.intellisense.js" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\chart.js\Chart.bundle.js" />
+    <Content Include="Scripts\chart.js\Chart.bundle.min.js" />
+    <Content Include="Scripts\chart.js\Chart.js" />
+    <Content Include="Scripts\chart.js\Chart.min.js" />
+    <Content Include="Scripts\datatables\dataTables.bootstrap4.css" />
+    <Content Include="Scripts\datatables\dataTables.bootstrap4.js" />
+    <Content Include="Scripts\datatables\jquery.dataTables.js" />
     <Content Include="Scripts\jquery-3.2.1.js" />
     <Content Include="Scripts\jquery-3.2.1.min.js" />
     <Content Include="Scripts\jquery-3.2.1.slim.js" />
     <Content Include="Scripts\jquery-3.2.1.slim.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery-easing\jquery.easing.compatibility.js" />
+    <Content Include="Scripts\jquery-easing\jquery.easing.js" />
+    <Content Include="Scripts\jquery-easing\jquery.easing.min.js" />
     <Content Include="Scripts\jquery-ui-1.12.1.js" />
     <Content Include="Scripts\jquery-ui-1.12.1.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\popper\popper.js" />
+    <Content Include="Scripts\popper\popper.min.js" />
+    <Content Include="Scripts\sb-admin.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
