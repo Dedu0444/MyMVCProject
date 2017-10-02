@@ -316,7 +316,7 @@ namespace DeduMVCProject.Models.EntityManager
                     UPV.LoginName = user.LoginName;
                     UPV.Password = user.PasswordEncryptedText;
 
-                    var SUP = db.SYSUserProfiles.Find(userID);
+                    var SUP = db.SYSUserProfiles.Where(x => x.SYSUserID == userID).SingleOrDefault();
                     if (SUP != null)
                     {
                         UPV.FirstName = SUP.FirstName;
@@ -324,7 +324,7 @@ namespace DeduMVCProject.Models.EntityManager
                         UPV.Gender = SUP.Gender;
                     }
 
-                    var SUR = db.SYSUserRoles.Find(userID);
+                    var SUR = db.SYSUserRoles.Where(x => x.SYSUserID == userID).SingleOrDefault();
                     if (SUR != null)
                     {
                         UPV.LOOKUPRoleID = SUR.LOOKUPRoleID;
